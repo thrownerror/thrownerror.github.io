@@ -13,26 +13,24 @@
 	<div style= "color: #E9E9E9">
 	<div style= "background-color: #222930">
 	<div style= "height = 1000px">
-	<h1>Robert Bailey</h1>
+	<h2>Robert Bailey</h2>
 </div>
 <!--body-->
 <div class = "container">
 	<div class = "row">
-	<div class = "twelve columns"><h3>Bio:</h3></div>
+	<div class = "twelve columns"><h4>Bio:</h4></div>
 </div></div>
 <!-- Bio content-->
 <div class = "container">
 	<div class = "row">
-	<div class = "six columns">
-		<p>I'm a Game Design and Development student attending the Rochester Institute of Technology.  I'm focused on game programming and level design.  
-		</p>
-		<p>
-		I have experience with (in order of comfort level) Java, C#, Processing, Javascript HTML, CSS, VHDL.
-		For software, I have experience with Maya, Unity, Visual Studios, Monogame, SourceTree, and Photoshop.
-		<p>I am a 4.0 student currently looking for co-op or internship opportunities in game design or general software development.</p>
+	<div class = "eight columns">
+		<p>I'm a Game Design and Development student attending the Rochester Institute of Technology.  I'm focused on game programming and level design.  <br>
+		I have experience with C#, Java, Processing, Javascript HTML, CSS, VHDL.
+		For software, I have experience with Maya, Unity, Visual Studios, Monogame, SourceTree, and Photoshop.<br>
+		I am a 4.0 student currently looking for co-op or internship opportunities in game design or general software development.</p>
 	</div>
-	<div class = "four columns">
-	<img src = "images/robHeadshot.jpg" alt="Robert Bailey" height = "400" width = "400">
+	<div class = "two columns" style="position:float;">
+	<img src = "images/robHeadshot.jpg" alt="Robert Bailey" height = "300" width = "300">
 	</div>
 	
 </div> <!--row-->
@@ -46,65 +44,96 @@
 <div style = "color: #000000">
 <div style = "background-color: #D6FFCF">
 <h2>Work - Programming and 3D Modeling</h2>
+<div class = "container">
+		<div class = "rows">
+			<div class = "six columns">
+			<h4>Pirate Ship Level</h4>
+			<p><a href="https://github.com/thrownerror/Projects/tree/master/3DModeling/PirateShipLevel">Link to Project Build and Screenshots on Github</a> </p>
+			<ul>
+			<li>Pirate ship where each solid object was constructed in Maya.  Water and fog were done using Unity effects.  Done in a team.</li>
+			<li>My animations: Ship wheel, cannon firing, sails unfurling, cargo grate opening and closing.</li>
+			<li>My models and UV unwraps: Sails, masts, wheel, grate, barrel.</li>
+			</ul>
+			</div>
+			
+			<div class = "six columns">
+			<img src = "images/pirateDeck.png" alt="Pirate Ship Deck" height = "350" width= "350" style="position: relative; top: 20px;">
+			</div>
+		</div>
+	</div>
+	
 	<div class = "container">
 		<!--<h2><!Class Projects</h2-->
 		<div class = "rows">
 			<div class = "six columns">
 				<h4>Autonomous Vehicles in 2D</h4>
-				<p><a href="https://github.com/thrownerror/Projects/tree/master/Processing/TieFightervsXwing">Link to Project on GitHub</a> 
+				<p><a href="https://github.com/thrownerror/Projects/tree/master/Processing/TieFightervsXwing">Link to Project Build and Design Doc on Github</a> 
 				</p>
 				<ul>
 				<li>Uses evading, pursuing, bounding circle based obstacle avoidance, and other Reynold's based steering behaviors.</li>
+				<li>Inspired by <cite>Star Wars</cite>, I used PVectors to draw X-Wings and TIE Fighters.</li>
+				<li>Made using Processing.</li>
 				</ul>
-			</div>
-			
-			<div class = "six columns">
-				<img src = "images/2DautoAgents.png" alt="2D Autonomous Agents" height = "400" width= "400">
+				<br>
 			</div>
 		</div>
-		
+			<div class = "six columns">
+				<img src = "images/2DautoAgents.png" alt="2D Autonomous Agents" height = "350" width= "350" style="position: relative; top: 20px;">
+			</div>
+	</div>
+
+	<div class ="container">
 		<div class = "rows">
 			<div class = "six columns">
 				<h4>3D Flocking Behaviors</h4>
-				<p><a href="https://github.com/thrownerror/Projects/tree/master/Unity/Flocking_in_3D">Link to Project</a> </p>
+				<p><a href="https://github.com/thrownerror/Projects/tree/master/Unity/Flocking_in_3D">Link to Project standalone build on Github</a> </p>
 				<ul>
 				<li>Primarily using Reynold's arrival and obstacle avoidance, these ships navigate as a flock in 3D space.</li>
-				<li>Asteroids, ships, and the target ring made by myself in Maya.</li>
+				<li>Asteroids, ships, and the target ring made in Maya.  Used Unity Store textures and skyboxes.</li>
+				<li>Programmed in C#.</li>
+				<br>
 				</ul>
 			</div>
 			
 			<div class = "six columns">
-				<img src = "images/3Dagents.png" alt="Autonomous Agents in 3D" height = "400" width= "400">
+				<img src = "images/3Dagents.png" alt="Autonomous Agents in 3D" height = "350" width= "350" style="position: relative; top: 20px;">
 			</div>
 		</div>
-			
+	</div>
+	<div class ="container">
 		<div class = "rows">
 			<div class = "six columns">
 				<h4>Autonomous Agent 3D Interactions</h4>
-				<p><a href="https://github.com/thrownerror/Projects/tree/master/Unity/AutonomousAgentsEnvironment">Link to Project</a> </p>
+				<p><a href="https://github.com/thrownerror/Projects/tree/master/Unity/AutonomousAgentsEnvironment">Link to Project standalone build on Github</a> </p>
 				<ul>
-				<li>Evoloution of the flocking behavior system, adds path and leader following algorithms.</li>
-				<li>Adds larger ships which seek clumps of the smaller ones to make them scatter.</li>
+				<li>Evoloution of the 3D flocking behavior system, adds path and leader following algorithms.</li>
+				<li>Adds larger ships which seek clumps of the smaller ones, who scatter as a result</li>
+				<li>Textures and skyboxes from Unity Store.</li>
+				<li>Programmed in C#.</li>
 				</ul>
+				
 			</div>
 			
 			<div class = "six columns">
-				<img src = "images/3DAAworld.png" alt="Autonomous Interactions in 3D" height = "400" width= "400">
+				<img src = "images/3DAAworld.png" alt="Autonomous Interactions in 3D" height = "350" width= "350" style="position: relative; top: 20px;">
 			</div>
 		</div>
-	
+	</div>
+	<div class ="container">
 		<div class = "rows">
 			<div class = "six columns">
 				<h4>Randomness Demonstration</h4>
-				<p><a href="https://github.com/thrownerror/Projects/tree/master/Processing/Randomness_Processing/MadMaxRandom">Link to Project</a> </p>
+				<p><a href="https://github.com/thrownerror/Projects/tree/master/Processing/Randomness_Processing/MadMaxRandom">Link to Project standalone build and Source code on Github</a> </p>
 				<ul>
 				<li>Uses Perlin noise to generate the scrolling ground.</li>
-				<li>Cars spawn from the top using Gaussian randomness.</li>
+				<li>Cars spawn from the top using Gaussian randomness, while the tower uses standard Processing Random algorithms. </li>
+				<li>The dark car is controllable, with a score system as more obstacles are evaded.</li>
+				<li>Programmed using Processing.</li>
 				</ul>
 			</div>
 			
 			<div class = "six columns">
-				<img src = "images/randomnessDemo.png" alt="MadMaxRandomnessDemo" height = "400" width= "400">
+				<img src = "images/randomnessDemo.png" alt="MadMaxRandomnessDemo" height = "350" width= "350" style="position: relative; top: 20px;">
 			</div>
 		</div>
 	</div>
@@ -112,14 +141,17 @@
 		<div class = "rows">
 			<div class = "six columns">
 			<h4>Asteroids Remake</h4>
-			<p><a href="https://github.com/thrownerror/Projects/tree/master/Processing/Asteroids_Processing">Link to Project</a> </p>
+			<p><a href="https://github.com/thrownerror/Projects/tree/master/Processing/Asteroids_Processing">Link to Project standalone build and source code on Github</a> </p>
 			<ul>
 			<li>Has two modes - a classic, randomized mode and a modified one where asteroids seek the player.</li>
+			<li>Asteroids and ships made using PVector libraries.</li>
+			<li>User earns points by destroying asteroids, which break off into smaller ones for two iterations</li>
+			<li>Programmed using Processing.</li>
 			</ul>
 			</div>
 			
 			<div class = "six columns">
-			<img src = "images/asteroidsScreen.png" alt="Asteroids Still" height = "400" width= "400">
+			<img src = "images/asteroidsScreen.png" alt="Asteroids Still" height = "350" width= "350" style="position: relative; top: 20px;">
 			</div>
 		</div>
 	</div>
@@ -127,48 +159,35 @@
 		<div class = "rows">
 			<div class = "six columns">
 			<h4>M1911 Animation</h4>
-			<p><a href="https://github.com/thrownerror/Projects/tree/master/3DModeling/M1911Animation">Link to Project</a> </p>
+			<p><a href="https://github.com/thrownerror/Projects/tree/master/3DModeling/M1911Animation">Link to Project standalone Unity Build and Maya project on Github</a> </p>
 			<ul>
-			<li>Animation of a firing and reloading loop done using Maya.</li>
+			<li>Animation loop of firing and reloading a M1911 pistol done using Maya.</li>
+			<li>Displayed using the Unity Engine</li>
+			<li>The Goal was to have a "sketch" type texture for the pistol as I found it more visually interesting</li>
 			<li>Modeling, rigging, and texture work all done by me.</li>
 			</ul>
 			</div>
 			
 			<div class = "six columns">
-			<img src = "images/m1911Still.png" alt="M1911 Firing Still" height = "400" width= "400">
+			<img src = "images/m1911Still.png" alt="M1911 Firing Still" height = "350" width= "350" style="position: relative; top: 20px;">
 			</div>
 		</div>
 	</div>	
 	
-	<div class = "container">
-		<div class = "rows">
-			<div class = "six columns">
-			<h4>Pirate Ship Level</h4>
-			<p><a href="https://github.com/thrownerror/Projects/tree/master/3DModeling/PirateShipLevel">Link to Project</a> </p>
-			<ul>
-			<li>Pirate ship where every element but water and fog effects was constructed in Maya.  Done in a team.</li>
-			<li>My animations: Ship wheel, cannon firing, sails unfurling, cargo grate opening and closing.</li>
-			<li>My models and UV unwraps: Sails, masts, wheel, grate, barrel.</li>
-			</ul>
-			</div>
-			
-			<div class = "six columns">
-			<img src = "images/pirateDeck.png" alt="Basic Mad Max Chess Set" height = "400" width= "400">
-			</div>
-		</div>
-	</div>
+	
 	
 	
 	<div class = "container">
 		<div class = "rows">
 			<div class = "twelve columns">
 			<div>
-	<div class = "container">
-		<div class = "rows">
-			<div class = "twelve columns">
-			<center><h4> <a href="doc/RobertWBailey_Resume.pdf" target="_blank">Resume Link</a></h4>
-			<h4>Source code available on request</h4></center>
-			</div>
+				<div class = "container">
+					<div class = "rows">
+						<div class = "twelve columns" style="margin: auto; text-align: center;">
+							<br>
+							<h4> <a href="doc/RobertWBailey_Resume.pdf" target="_blank">Resume Link</a></h4>
+						<h5>Source code available on request</h5>
+					</div>
 		</div>
 	</div>
 </div>
