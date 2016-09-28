@@ -187,11 +187,13 @@ footer{
 	display: block;
 	font-size: 140%;
 	clear: both;
-
 }
 footer h2{
 	color: #79CDCD;
 	font-style: underline;
+}
+footer p{
+	font-size: 60%;
 }
 footer h2:hover{
 	color: #388E8E;

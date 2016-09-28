@@ -57,7 +57,7 @@
 		var aaImg = ['media/aa1.png','media/aa2.png','media/aa3.png','media/aa4.png','media/aa5.png','media/aa6.png'];
 		var cbImg = ['media/cb1.png','media/cb2.png','media/cb3.png','media/cb4.png','media/cb5.png','media/cb6.png'];
 		var rnImg = ['media/randomnessDemo.png', 'media/rn1.png', 'media/rn2.png', 'media/rn3.png'];
-
+		var feet;
 		}
 		function init(){
 			mouseGall = false;
@@ -73,6 +73,7 @@
 			base.style.width = "100%";
 			base.style.height = "100%";
 		//	base.onclick = updateBoxes;
+			feet = document.getElementById("foot");
 			//container
 			divMain = document.createElement("div");
 			divMain.style.width = "100%";
@@ -383,7 +384,7 @@
 						"<li><p>A light dexterity game for families, allowing simple, fun experiences for players of all ages.</p></li>"+
 						"<li><p>Focuses on using dice to manipulate point values, either by scoring points or knocking others away.</p></li>"+
 						"<li><p>Also has a drafting mode where the dice get additional powers based off their colors.</p></li>"+
-						"<li><p>Rules at:</p></li>"+
+						"<li><p>Rules <a href='doc/InDICEsesionRules.pdf' target = '_blank'>here</a></p></li>"+
 						"<li><p>Lead Designer and rules writer</p></li>"+
 					"</ul>"
 				}
@@ -408,6 +409,7 @@
 						"<li><p>Through streamlined systems, players can destroy each other, build settlements, and trade routes to earn victory points.</p></li>"+
 						"<li><p>Violent actions reward players quickly, but run the risk of being confronted by the NPC Federation.</p></li>"+
 						"<li><p>I worked predominatley on writing rules and mechanical design.</p></li>"+
+						"<li><p>Rules <a href='doc/CaptainOfTheStarsRules.pdf' target = '_blank'>here</a></p></li>"+
 					"</ul>";
 				}
 				if(tr){
@@ -427,6 +429,7 @@
 			//Writing Page
 			if(writingPage)
 			{
+				feet.innerHTML = "<h2 id = 'aboutBut'>About Me</h2>";
 				title.innerHTML = "<h3>Robert Bailey: Writing<h3>";    
 				boxTL.style.display = "none";
 				boxTR.style.display = "none";
@@ -530,9 +533,11 @@
 					"</ul>";
 				}
 			}
+/*
 			//Notes Page
 			if(notesPage)
 			{
+				feet.innerHTML = "";
 				title.innerHTML = "<h3>Notes<h3>";
 				boxTL.style.display = "none";
 				boxTR.style.display = "none";
@@ -543,6 +548,7 @@
 				//foot.style.display = "block";
 				row1.style.display = "none";
 				row2.style.display = "none";
+				feet.innerHTML = "<h2 id = 'aboutBut'>About Me</h2>";
 				bigBox.innerHTML = 
 					"<h3>Image sources:</h3>"+
 					"<ul>"+
@@ -575,6 +581,7 @@
 						"<li><a href='.../doc/RobertWBailey_Resume.pdf' target = '_blank'>Resume</a></li>"+
 					"</ul>";
 			}
+*/
 			if(aboutPage)
 			{
 				title.innerHTML = "<h3>Robert Bailey: About Me<h3>";
@@ -586,7 +593,7 @@
 				row2.style.display = "none";
 				bigBox.style.display = "inline";
 				//foot.style.display = "block";
-				
+				feet.innerHTML = "<h2 id = 'aboutBut'>About Me</h2>";
 				var test = document.createElement("img");
 				test.src = "media/robHeadshot.jpg";
 				bigBox.innerHTML = "";
@@ -599,7 +606,6 @@
 					"<br>I have programmed in: C#, C++, Java, Processing, Javascrpt, HTML, and CSS. "+
 					"<br>In addition, I've worked with Maya, Unity, Visual Studios, Monogame, SourceTree, and Photoshop."+
 					"<br>Currently looking for co-op and internship opportunities in game design and software development."+
-				"</p>"+
 				"</p>"+
 				"<p><br><b>Current project:</b> A deckbuilding game about exploring and looting dungeons."+
 				"<br>"+
