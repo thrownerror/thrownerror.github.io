@@ -1,0 +1,472 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	
+	margin: 0 auto;
+	padding: 0px;
+	overflow-x: hidden;
+	background-image: url('../media/lowPolybkgd.png');
+
+	background-size: 100% 110%;
+	background-repeat: no-repeat;
+	min-width: 480px;
+	background-color: #C3E0FF;
+	max-height: 100%;
+
+}
+#logo{
+	position: relative;
+	margin-right: 60px;
+	padding: 0;
+	z-index: 0;
+	bottom: 60px;
+	float: right;
+	width: 100px;
+	height: 100px;
+	padding-left: 10px;
+
+}
+#logoOver{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	z-index: 0;
+	width: 100px;
+	height: 100px;
+	padding-top: 10px;
+}
+#container{
+	font-family: 'Catamaran', sans-serif;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	line-height: 0;	
+	height: 100%;
+	max-width:1920px;
+}
+
+header{
+	width: 100%;
+	color: #E9E9E9;
+	vertical-align: top;
+	line-height: normal;
+	display: inline-block;
+	text-align: center;
+	font-size: 130%;
+	height: 10%;
+	padding-top: 20px;
+	font-family: 'Orbitron', sans-serif;
+}
+header h1{
+	text-shadow: 2px 2px #000000;
+}
+
+#overlay{
+	background-color: #d3d3d3;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	top: 0;
+	overflow: auto;
+	z-index: 90;
+}
+
+.horizontal li:hover{
+	color: #007C00;
+}
+
+
+.fa{
+	font-size: 6em;
+	position: relative;
+	float: right;
+	padding-top: 16px;
+	color: #5F9F9F;
+	transition: color .5s ease;
+}
+.fa:hover{
+	color: #d4ff0d;
+}
+
+.navButton{
+	position: fixed;
+	right:90%;
+}
+
+#navButtonOpen{
+	float: right;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	z-index: 99;
+	
+}
+#navButtonClose{
+	
+	float: right;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	z-index: 99;
+	display: none;
+}
+#fadeMenu{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0px 0px;
+}
+.horizontal{
+	font-size: 150%;
+	border-bottom: 1px;
+	text-transform: capitalize;
+	padding: 75px 0px 120px;
+}
+.horizontal li{
+	display: inline-block;
+	vertical-align: top;
+	width:30%;
+	position: relative;
+	cursor: pointer;
+	background-color: #696969;
+	margin-bottom: 10px;
+	border: 1px;
+	border-color: #696969; /*I'm not sorry Cody*/
+	border-radius: 20px 20px 20px 20px;
+	
+}
+
+.horizontal li a{
+	display: block;
+	text-decoration: none;
+	transition: 	.5s ease;
+	text-align: center;
+	margin: 0 auto;
+}
+.horizontal li:hover{
+	background-color: #939393;
+}
+.horizontal li a:hover{
+	text-decoration: underline;
+	color: #d4ff0d;
+}
+.horizontal ul {
+	padding:20px 0;
+	margin: 0 auto;
+}
+.horizontal ul li {
+	display:inline-block;
+	font-size:24px;
+	padding-top: 5%;
+	width:100%;
+}
+.horizontal li ul li a{
+	padding: 16px 0;
+}
+#row2
+{
+	padding-top: 20px;
+}
+footer{
+	width: 20%;
+	color: #000000;
+	margin: auto;
+	vertical-align: top;
+	line-height: normal;
+	position: relative;
+	text-align:center;
+	display: block;
+	font-size: 140%;
+	clear: both;
+
+}
+footer h2{
+	color: #79CDCD;
+	font-style: underline;
+}
+footer h2:hover{
+	color: #388E8E;
+}
+footer h3{
+	font-size: 120%;
+}
+footer ul{
+	list-style-type: none;
+	margin: auto;
+	display: inline;
+	line-height: normal;
+}
+footer a{
+	font-size: 110%;
+}
+p {
+	font-size: 120%;
+	line-height: 1.4em;
+}
+
+
+/*new CSS*/
+.columnL{
+	width: 100%;
+	height: 50%;
+}
+.columnR{
+	width: 100%;
+	height: 50%;
+	/*float: right;*/
+}
+.box{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	margin: 0;
+	display: inline-block;
+	color: white;
+	/*background-size: 85% 85%;*/
+	background-size: 75% 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: background-size .4s ease-in;
+
+}
+.box h1{
+	padding-top: 100px;
+	visibility: visible;
+}
+.box:hover h1{
+	visibility: visible;
+}
+.box:hover {
+	
+	background-size: 90% 90%;
+}
+
+.box img{
+	width: 80%;
+	position: center;
+	max-width: 100%;
+}
+#lightB{
+	position: absolute;
+	height: 120%;
+	width: 110%;
+	left: 0%;
+	top: 0%;
+	padding-top: 0%;
+	padding-bottom: 10%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.5);
+	display: none;
+	z-index: 10;
+}
+#lightB .box{
+	max-width: 84%;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	left: 3%;
+	top: 3%;
+	padding-bottom: 200px;
+	background-size: 90% 70%;
+	background-position: 50% 15%;
+	background-color: rgba(80,80,80,.8)
+}
+#lightB .box a{
+	color: #79CDCD;
+}
+#lightB .box a:visited{
+	color: #388E8E;
+}
+#lightb .box:hover{
+	background-size: 70% 70%;
+}
+#lightB .box p{
+	position: relative;
+	top: 60%;
+}
+
+#bigBox {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+}
+#bigBox img {
+	display: inline-block;
+	float: right;
+	position: relative;
+	right: 5%;
+	border-radius: 100px;
+	width: 40%;
+	padding-left: 5%;
+}
+#bigBox p{
+	display: inline-block;
+	width: 50%;
+}
+#bigBox ul{
+	padding-top: 20px;
+	text-align: center;
+}
+#bigBox li{
+	padding-top: 20px;
+	display: block;
+}
+#bigBox h3{
+	padding-top: 40px;
+	text-align: center;
+}
+
+#textBox{
+	text-align: center;
+}
+#textBox li{
+	display: block;
+	padding-top: 20px;
+}
+
+#textBox img{
+	margin: 0 auto;
+	max-width: 80%;
+	max-height: 70%;
+	padding-top: 20px;
+}
+#textBox ul{
+	display: block;
+}
+@media screen and (max-width: 1000px)
+{
+	h1{
+		font-size: 115%;
+	}
+	.fa-bars{
+		right: 30px;
+	}
+	.fa-times{
+		right: 30px;
+	}
+	#logo{
+		bottom: 40px;
+		left: 20px;
+		width: 75px;
+		height: 75px;
+	}
+	#logoOver{
+		padding-top: 50px;
+		width: 75px;
+		height: 75px;
+	}
+	.fa{
+		font-size: 3em;
+	}
+	#lightB .box p{
+		font-size: 1.2em;
+		line-height: .8em;
+		padding-bottom: 5px;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	section{
+		width: 95%;
+	}
+	#logo{
+		bottom: 50px;
+		left: 20px;
+
+		width: 50px;
+		height: 50px;
+	
+	}
+	.fa-bars{
+		right: 30px;
+	}
+	.fa-times{
+		right: 30px;
+	}
+	h1{
+		font-size: 105%;
+		padding-top: 10px;
+	}
+	footer{
+		width: 95%;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+	footer h3{
+		font-size: 115%;
+		margin: 0 auto;
+	}
+	footer ul{
+		position: relative;
+		bottom: 40px;
+		margin: 0 auto;
+	}
+	footer a{
+		font-size: 110%;
+	}
+	#logoOver{
+		width: 50px;
+		height: 50px;
+	}
+	.fa{
+		font-size: 2.5em;
+	}
+	.horizontal{
+		position: relative;
+		bottom: 75px;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.horizontal li{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#row2 li{
+		padding-top: 40px;
+	}
+	#row2{
+		position: relative;
+		bottom: 80px;
+	}
+	#title{
+		position: relative;
+		top: 40px;
+	}
+	header h1{
+		font-size: 110%;
+	}
+	#lightB{
+		padding-bottom: 30%;
+		overflow: hidden;
+	}
+	#lightB .box{
+		padding-bottom: 20%;
+		overflow: hidden;
+	}
+	#lightB .box p{
+		font-size: 1em;
+		line-height: .8em;
+		padding-bottom: 3px;
+		margin: 0 auto;
+	}
+	#bigBox p{
+		font-size: 1.1em;
+	}
+}
+
+
+
+
