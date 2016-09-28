@@ -1,4 +1,4 @@
-		"use strict";
+	"use strict";
 		window.onload = init;
 			//controls
 		var bl; //bottom left
