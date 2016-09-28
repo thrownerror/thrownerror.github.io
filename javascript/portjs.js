@@ -572,7 +572,7 @@
 						"<li><a href = 'https://www.linkedin.com/in/robert-bailey-699213a4'>LinkedIn</a></li>"+
 						"<li><a href = 'https://twitter.com/thrownerror'>Twitter</a></li>"+
 						"<li><a href=  'mailto:rxb2890@g.rit.edu'>rxb2890[at]g.rit.edu</a></li>"+
-						"<li><a href='doc/RobertWBailey_Resume.pdf' target = '_blank'>Resume</a></li>"+
+						"<li><a href='.../doc/RobertWBailey_Resume.pdf' target = '_blank'>Resume</a></li>"+
 					"</ul>";
 			}
 			if(aboutPage)
