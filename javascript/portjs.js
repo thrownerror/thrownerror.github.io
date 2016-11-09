@@ -600,12 +600,12 @@
 				bigBox.appendChild(test);
 				bigBox.innerHTML = bigBox.innerHTML + 
 				"<p>"+
-					"I'm Robert Bailey, a game designer focused on levels and narratives."+
+					"I'm Robert Bailey, a game designer with a passion for making levels and telling narratives through them."+
 					"<br>"+
 					"<br>I attend the Rochester Institute of Technolgoy for Game Design and Development."+
-					"<br>I have programmed in: C#, C++, Java, Processing, Javascrpt, HTML, and CSS. "+
-					"<br>In addition, I've worked with Maya, Unity, Visual Studios, Monogame, SourceTree, and Photoshop."+
-					"<br>Currently looking for co-op and internship opportunities in game design and software development."+
+					"<br>I have programmed in: C#, Java, C++, Javascript, HTML, and CSS"+
+					"<br>In addition, I've worked with Maya 2016, Unity 5.2, Visual Studios 2016, Monogame, SourceTree, and Photoshop."+
+					"<br>Currently looking for design and developmenet opportunities in game design and software development."+
 				"</p>"+
 				"<p><br><b>Current project:</b> A deckbuilding game about exploring and looting dungeons."+
 				"<br>"+
@@ -614,7 +614,7 @@
 					"<ul>"+
 						"<li><a href = 'https://www.linkedin.com/in/robert-bailey-699213a4'>LinkedIn</a></li>"+
 						"<li><a href = 'https://twitter.com/thrownerror'>Twitter</a></li>"+
-						"<li><a href=  'mailto:rxb2890@g.rit.edu'>rxb2890[at]g.rit.edu</a></li>"+
+						"<li><a href=  'mailto:emailrobertb@gmail.com'>emailrobertb[at]gmail.com</a></li>"+
 						"<li><a href='doc/RobertWBailey_Resume.pdf' target = '_blank'>Resume</a></li>"+
 					"</ul>";
 			}
