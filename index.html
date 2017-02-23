@@ -1,54 +1,93 @@
-<!DOCTYPE html>
-<html lang = "en">
-<head>
-<link href='https://fonts.googleapis.com/css?family=Orbitron:900|Catamaran:400,700,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<meta charset = "utf-8" />
-	<meta name = "viewport" content ="width=device-width, initial-scale=1">
-	<title>Robert Bailey</title>
-	<link href = "css/style.css" type="text/css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src = "javascript/portjs.js"></script>
-</head>
-<body>
-<div id = "container">
-	<div id = "overlay">
-		<div id="navButtonClose" class="navButton">
-			<i class="fa fa-home" aria-hidden="true"></i>
-		</div>
+<!DOCTYPE HTML>
 
-		<div id = "fadeMenu">
-			<ul class="horizontal">
-				<li><p id = "homeBut">Home</p></li>
-			</ul>
-			<ul class = "horizontal" id="row2">
-					<li><p id="levelBut">Levels</p></li>
-					<li><p id="designBut">Design</p></li>
-					<li><p id="codeBut">Code</p></li>
-					<li><p id="writingBut">Writing</p></li>
-					<li><p id = "notesBut">Notes</p></li>
-			</ul>
-		</div>
-	</div>
+<html>
+   <head>
+      <title>Robert Bailey Portfolio</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link rel = "stylesheet" type ="text/css" href="css/generalStyle.css">
+     
+   </head>
 
-		<div id="navButtonOpen" class = "navButton">
-		<i class="fa fa-home" aria-hidden="true"></i>
-	</div>
-	<header>
-		<h1 id = "title">Robert Bailey's Portfolio</h1>
-			<img id="logo" src = "media/logo.png" alt = "logo">
+   <body>
+     <div id = "leftBar">
+       <h1>Robert Bailey's &#13; Portfolio</h1>
+       <ul>
+         <li class = "mainDrop">Projects
+           <ul>
+             <li><a href = "projects/colorCoded.html">ColorCoded</a></li>
+             <li><a href = "projects/cots.html">Captain of the Stars</a></li>
+             <li><a href = "projects/kf2Arena.html">Killing Floor 2 - Arena</a></li>
+             <li><a href = "projects/indicecision.html">inDICEcision</a></li>
+             <li><a href = "projects/swingyDinghy.html">Swingy Dinghy</a></li>
+           </ul>
+         </li>
+         <br>
+         <li class = "mainDrop">Writing
+           <ul>
+             <li><a href = "writing/twine.html">Twine - Breach Initiation</li>
+             <li><a href = "writing/asoiaf.html">Game Based Fiction</li>
+             <li><a href = "writing/breach.html">The Breach</li>
+           </ul>
+         </li>
+         <br>
+         <li class = "mainDrop"><a href = "index.html">About Me</li>
+         <li class = "mainDrop"><a href = "contactMe.html">Contact Me</li>
+         <br>
+       </ul>
+       <ul id="contactInfo">
+         <li><a href = "https://github.com/thrownerror">GitHub</a></li>
+         <li><a href = "https://www.linkedin.com/in/robert-bailey-699213a4">LinkedIn</a></li>
+         <li><a href = "https://twitter.com/thrownerror">Twitter</a></li>
+         <li><a href = "documents/RobertBaileyResume.pdf" target = "_blank">Resume</a></li>
+       </ul>
+     </div>
+     <div id = "mainContent">
+       <section>
+		<div class = "bodyContent">
+            <h1>Welcome!</h1>
+          <br>
 
-	</header>
+				   Apologies for the mess - Currently redesigning and fixing this site, especially for mobile. 
+                   <br>But I really wanted to show off my new projects in a different way. Should be stable by the start of next week (Note made 2/23/17).
+                   <br>
+                   <br>This is the portfolio of Robert Bailey! I'm a game designer with a passion for making levels and telling stories through those same levels and mechanics. 
+				   <img  src = "images/robHeadshot.jpg" alt="Robert Picture" height="25%" width="25%">
+				   I currently attend the Rochester Institute of Technology for Game Design and Development as a third year student.
+                  <br><br>
 
+                  I have programed in:
+					<ul>
+					  <li>C#</li>
+					  <li>Java</li>
+					  <li>C++</li>
+					  <li>Javascript</li>
+					</ul>
+                  <br>
+				  I've worked with 
+					<ul>
+					  <li>Unreal Engine 4.14</li>
+					  <li>Unity 5.2.5 and 5.4</li>
+					  <li>Visual Studios 2016</li>
+					  <li>Monogame</li>
+					  <li>Maya 2016</li>
+					  <li>Sourcetree</li>
+					  <li>Photoshop</li>
+					</ul>
+				 <br><br>
+				 Currently looking for design and development opportunities in game design and software development.
+			 
+            <br><br>
+			 <h2>Current Project: </h2>
+            <br>
+			 <h3>VRoom: A VR Car Combat Game</h3>
+		  Working as part of an 8 person team on a VR Car Combat game for the HTC Vive using Unreal Engine 4.14. 
+          <br>Go here: <a href="http://fallingtricyclegames.blogspot.com/">Falling Tricycle Games</a> for the development blog!
+              
+		 </div>
+		 			 
 
-	<footer id = "foot">
-		<h2 id = "aboutBut">About Me</h2>
-		<p>Improving mobile fidelity over time.
-		<br>Click on a tab to get information, and click the images to navigate the gallery.</p>
-		</p>
-	</footer>
-	<div id = "content">
-	</div>
-
-</div>
-</body>
+       </section>
+     </div>
+     
+   </body>
+</html>

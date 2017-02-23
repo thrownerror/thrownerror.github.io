@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+}
+html{
+  margin: 0;
+  padding: 0;
+}
+ body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background: #a9a9a9;
+}
+#leftBar{
+  overflow: auto;
+  height: auto;
+  
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 100vh;
+  background: #314346;
+  color: #E8960C;
+  min-width: 240px;
+}
+
+#leftBar a{
+  color: #E8530C;
+}
+#leftBar a:visited{
+  color: #DE4F0B;
+}
+#leftBar a:hover{
+  color: #C70000;
+}
+
+#leftBar h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#leftBar .mainDrop{
+  font-size: 1.4em;
+  list-style-type: none;
+}
+#leftBar .mainDrop ul{
+  list-style-type: none;
+}
+
+
+#contactInfo{
+  list-style-type: none;
+  font-size: 1.4em;
+  padding-bottom: 30px;
+}
+#mainContent{
+  padding-left: 5%;
+    overflow: auto;
+  height: auto;
+position: inline;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+section{
+  padding-left: 0%;
+}
+#mainContent h1{
+  padding-top: 30px;
+}
+.bodyContent{
+  padding-left: 0;
+  width:80%;
+  word-wrap: break-word;
+  float: none;
+}
+.textContent{
+  float: none;
+  word-wrap: none;
+}
+.bodyContent p{
+	display: inline-block;
+}
+.bodyContent img{
+  float: right;
+  margin: 7px;
+  margin-top: 30px;
+  border-style: none;
+}
+.imgContainer{
+    float: right;
+    width = 100px;
+}
+
+
+.cycle-prev:hover, .cycle-next:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+.cycle-prev {
+    left: 25%;
+    background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
+}
+.cycle-next {
+    right: 25%;
+    background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+}
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 800;
+    height: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+  
+}
+		
+        
