@@ -6,41 +6,73 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link rel = "stylesheet" type ="text/css" href="css/generalStyle.css">
      
+      <link href="dist/hamburger.css" rel="stylesheet">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="javascript/jquery.mmenu.min.js" type="text/javascript"></script>
+      <link href="javascript/jquery.mmenu.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+   $(document).ready(function() {
+      var $menu = $("#my-menu").mmenu({
+         //   options
+      });
+      var $icon = $("#my-icon");
+      var API = $menu.data( "mmenu" );
+
+      $icon.on( "click", function() {
+         API.open();
+      });
+
+      API.bind( "opened", function() {
+         setTimeout(function() {
+            $icon.addClass( "is-active" );
+         }, 50);
+      });
+      API.bind( "closed", function() {
+         setTimeout(function() {
+            $icon.removeClass( "is-active" );
+         }, 200);
+      });
+   });
+</script>
+     
    </head>
 
    <body>
-      <div id = "leftBar">
-       <h1>Robert Bailey's &#13; Portfolio</h1>
-       <ul>
-         <li class = "mainDrop">Projects
-           <ul>
-             <li><a href = "/projects/colorCoded.html">ColorCoded</a></li>
-             <li><a href = "/projects/cots.html">Captain of the Stars</a></li>
-             <li><a href = "/projects/kf2Arena.html">Killing Floor 2 - Arena</a></li>
-             <li><a href = "/projects/indicecision.html">inDICEcision</a></li>
-             <li><a href = "/projects/swingyDinghy.html">Swingy Dinghy</a></li>
-           </ul>
-         </li>
-         <br>
-         <li class = "mainDrop">Writing
-           <ul>
-             <li><a href = "writing/twine.html">Twine - Breach Initiation</li>
-             <li><a href = "writing/asoiaf.html">Game Based Fiction</li>
-             <li><a href = "writing/breach.html">The Breach</li>
-           </ul>
-         </li>
-         <br>
-         <li class = "mainDrop"><a href = "index.html">About Me</li>
-         <li class = "mainDrop"><a href = "contactMe.html">Contact Me</li>
-         <br>
-       </ul>
-       <ul id="contactInfo">
+    <div>
+     <button id = "my-icon" class="hamburger hamburger--emphatic " type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+     </button>
+     </div>
+     
+<nav id="my-menu">
+   <ul>
+      <li><span>Projects</span>
+          <ul class="Vertical">
+            <li><a href="projects/colorCoded.html">ColorCoded</a></li>
+            <li><a href="projects/swingyDinghy.html">Swingy Dinghy</a></li>
+            <li><a href="projects/KF2.html">Killing Floor 2 - Arena</a></li>
+            <li><a href="projects/cots.html">Captain of the Stars</a></li>
+            <li><a href="projects/inDICEcision.html">inDICEcision</a></li>
+         </ul>
+      </li>
+      <li><span>Writing</span>
+        <ul class="Vertical">
+          <li><a href="writing/twine.html">Twine - Breach Initiation</a></li>
+          <li><a href="writing/asoiaf.html">Game Based Fiction</a></li>
+          <li><a href="writing/breach.html">The Breach</a></li>
+        </ul>
+      <li><a href = "index.html">About Me</a>
+      <li><a href = "contactMe.html">Contact Me</a>
+      <ul class="Vertical">
          <li><a href = "https://github.com/thrownerror">GitHub</a></li>
          <li><a href = "https://www.linkedin.com/in/robert-bailey-699213a4">LinkedIn</a></li>
          <li><a href = "https://twitter.com/thrownerror">Twitter</a></li>
          <li><a href = "documents/RobertBaileyResume.pdf" target = "_blank">Resume</a></li>
-       </ul>
-     </div>
+      </ul>
+   </ul>
+</nav>
      <div id = "mainContent">
        <section>
          <h1>Contact Me</h1>

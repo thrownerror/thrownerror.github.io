@@ -4,51 +4,25 @@
 html{
   margin: 0;
   padding: 0;
+  min-width: 400px;
 }
  body{
   font-family: 'Roboto', sans-serif;
   margin: 0px;
   padding: 0px;
   height: 100%;
-  background: #a9a9a9;
-}
-#leftBar{
-  overflow: auto;
-  height: auto;
-  
-  position: relative;
-  float: left;
-  width: 25%;
-  min-height: 100vh;
   background: #314346;
-  color: #E8960C;
-  min-width: 240px;
+  min-width: 400px;
 }
-
-#leftBar a{
-  color: #E8530C;
+a{
+  color: #C25923;
 }
-#leftBar a:visited{
-  color: #DE4F0B;
+a:hover{
+  color: #BF3022;
 }
-#leftBar a:hover{
-  color: #C70000;
+a:visited{
+  color: #691A13;
 }
-
-#leftBar h1{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-#leftBar .mainDrop{
-  font-size: 1.4em;
-  list-style-type: none;
-}
-#leftBar .mainDrop ul{
-  list-style-type: none;
-}
-
-
 #contactInfo{
   list-style-type: none;
   font-size: 1.4em;
@@ -59,8 +33,10 @@ html{
     overflow: auto;
   height: auto;
 position: inline;
+  color: #c2c2c2;
   padding-bottom: 50px;
   min-height: 100vh;
+  min-width: 400px;
 }
 section{
   padding-left: 0%;
@@ -73,6 +49,8 @@ section{
   width:80%;
   word-wrap: break-word;
   float: none;
+    min-width: 400px;
+
 }
 .textContent{
   float: none;
@@ -89,10 +67,17 @@ section{
 }
 .imgContainer{
     float: right;
-    width = 100px;
+    width: 100px;
 }
 
-
+.vidBox{
+  margin:  5%;
+}
+.center{
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
 .cycle-prev:hover, .cycle-next:hover {
     opacity: .7;
     filter: alpha(opacity=70);
@@ -115,7 +100,9 @@ section{
     height: 100%;
     cursor: pointer;
 }
-
+#my-menu ul{
+  font-size: 22pt;
+}
 @media (max-width: 800px){
   
 }
